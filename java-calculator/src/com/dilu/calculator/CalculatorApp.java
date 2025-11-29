@@ -17,6 +17,11 @@ public class CalculatorApp extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        }
+        display = new JTextField("0");
+        display.setEditable(false);
+        display.setFont(new Font("Arial", Font.BOLD, 28));
+        display.setHorizontalAlignment(SwingConstants.RIGHT);
+
+    }
 
 }
