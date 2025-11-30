@@ -47,6 +47,9 @@ public class CalculatorApp extends JFrame{
         if("0123456789".contains(command)){
             handleNumber(command);
         }
+        else if("+-*/".contains(command)){
+            handleOperator(command);
+        }
     }
 
 }
