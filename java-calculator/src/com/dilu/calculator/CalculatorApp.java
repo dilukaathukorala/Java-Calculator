@@ -39,7 +39,8 @@ public class CalculatorApp extends JFrame{
             panel.add(button);
         }
 
-
+        add(display, BorderLayout.NORTH);
+        add(panel, BorderLayout.CENTER);
     }
 
 }
