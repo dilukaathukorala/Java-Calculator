@@ -5,26 +5,40 @@ import java.awt.*;
 
 public class CalculatorApp extends JFrame {
 
-    private final JTextField display;
+    // Top line – shows the operation chain: 2 + 3 + 4 =
+    private final JTextField expressionDisplay;
+    // Bottom line – shows current input / result
+    private final JTextField resultDisplay;
 
     // Calculator state
-    private double currentValue = 0;      // accumulated value (result so far)
-    private String currentOperator = null; // last operator pressed (+, -, *, /)
-    private boolean startNew = true;      // are we starting a new number?
+    private double currentValue = 0;        // accumulated value
+    private String currentOperator = null;  // last operator pressed
+    private boolean startNew = true;        // are we starting a new number?
 
     public CalculatorApp() {
-        setTitle("Leo Calculator v1.1.0");
-        setSize(300, 400);
+        setTitle("Leo Calculator v1.2.0");
+        setSize(320, 420);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        display = new JTextField("0");
-        display.setEditable(false);
-        display.setFont(new Font("Arial", Font.BOLD, 40));
-        display.setHorizontalAlignment(SwingConstants.RIGHT);
-        display.setPreferredSize(new Dimension(300, 80));
-        display.setBorder(BorderFactory.createEmptyBorder(20, 15, 20, 15));
+        // ---------- Displays (top: expression, bottom: result) ----------
+        expressionDisplay = new JTextField("");
+        expressionDisplay.setEditable(false);
+        expressionDisplay.setFont(new Font("Arial", Font.PLAIN, 18));
+        expressionDisplay.setHorizontalAlignment(SwingConstants.RIGHT);
+        expressionDisplay.setBorder(BorderFactory.createEmptyBorder(5, 10, 0, 10));
 
+        resultDisplay = new JTextField("0");
+        resultDisplay.setEditable(false);
+        resultDisplay.setFont(new Font("Arial", Font.BOLD, 40));
+        resultDisplay.setHorizontalAlignment(SwingConstants.RIGHT);
+        resultDisplay.setBorder(BorderFactory.createEmptyBorder(5, 10, 15, 10));
+
+        JPanel displayPanel = new JPanel(new GridLayout(2, 1));
+        displayPanel.add(expressionDisplay);
+        displayPanel.add(resultDisplay);
+
+        // ---------- Buttons ----------
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 4, 5, 5));
 
@@ -42,7 +56,7 @@ public class CalculatorApp extends JFrame {
             panel.add(button);
         }
 
-        add(display, BorderLayout.NORTH);
+        add(displayPanel, BorderLayout.NORTH);
         add(panel, BorderLayout.CENTER);
     }
 
@@ -61,58 +75,72 @@ public class CalculatorApp extends JFrame {
     // ---------- Input handlers ----------
 
     private void handleNumber(String digit) {
-        if (startNew || display.getText().equals("0")) {
-            display.setText(digit);
+        if (startNew || resultDisplay.getText().equals("0")) {
+            resultDisplay.setText(digit);
             startNew = false;
         } else {
-            display.setText(display.getText() + digit);
+            resultDisplay.setText(resultDisplay.getText() + digit);
         }
     }
 
     /**
-     * Pressing an operator:
-     *  - if this is the first operator: store current number in currentValue
-     *  - if there is already an operator: calculate currentValue (op) currentNumber
-     *  - then store the new operator
+     * When an operator is pressed:
+     *  - If it's the first operator, store current number as currentValue.
+     *  - If there was already an operator, apply it first (left-to-right).
+     *  - Update the expression (top line).
      */
     private void handleOperator(String op) {
-        double numberOnScreen = Double.parseDouble(display.getText());
+        double numberOnScreen = Double.parseDouble(resultDisplay.getText());
 
         if (currentOperator == null || startNew) {
-            // First operator, or user pressed operator twice
+            // First operator or repeated operator press
             currentValue = numberOnScreen;
+            expressionDisplay.setText(removeTrailingZeros(numberOnScreen) + " " + op + " ");
         } else {
-            // We already had an operator -> apply it first
+            // Apply the previous operator first
             currentValue = calculate(currentValue, numberOnScreen, currentOperator);
+            expressionDisplay.setText(
+                    expressionDisplay.getText()
+                            + removeTrailingZeros(numberOnScreen) + " " + op + " "
+            );
         }
 
-        display.setText(removeTrailingZeros(currentValue));
+        resultDisplay.setText(removeTrailingZeros(currentValue));
         currentOperator = op;
         startNew = true;
     }
 
     private void handleClear() {
-        display.setText("0");
+        resultDisplay.setText("0");
+        expressionDisplay.setText("");
         currentValue = 0;
         currentOperator = null;
         startNew = true;
     }
 
     /**
-     * When '=' is pressed, apply the last operator once more and finish.
+     * When '=' is pressed:
+     *  - Apply the last operator
+     *  - Show expression on first line with '='
+     *  - Show final result on second line
      */
     private void handleEquals() {
         if (currentOperator == null) {
-            // Nothing to do, just keep the same number
+            // Nothing to compute
             return;
         }
 
-        double numberOnScreen = Double.parseDouble(display.getText());
+        double numberOnScreen = Double.parseDouble(resultDisplay.getText());
         double result = calculate(currentValue, numberOnScreen, currentOperator);
 
-        display.setText(removeTrailingZeros(result));
+        // Finish the expression line: "... lastNumber ="
+        expressionDisplay.setText(
+                expressionDisplay.getText()
+                        + removeTrailingZeros(numberOnScreen) + " ="
+        );
 
-        // After '=', we show final result and reset operator
+        resultDisplay.setText(removeTrailingZeros(result));
+
         currentValue = result;
         currentOperator = null;
         startNew = true;
@@ -126,7 +154,7 @@ public class CalculatorApp extends JFrame {
             case "-" -> a - b;
             case "*" -> a * b;
             case "/" -> b == 0 ? 0 : a / b;
-            default -> b; // just return last number if no operator
+            default -> b;
         };
     }
 
