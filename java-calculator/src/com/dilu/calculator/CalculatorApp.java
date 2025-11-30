@@ -80,6 +80,29 @@ public class CalculatorApp extends JFrame{
         startNew = true;
     }
 
+    private void handleEquals(){
+        double num2 = Double.parseDouble(display.getText());
+        double result = calculate(num1, num2, operator);
+        String formatted = removeTrailingZeros(result);
+
+        display.setText(formatted);
+        startNew = true;
+    }
+
+    private double calculate(double a,double b, String op){
+        return switch(op){
+            case "+" -> a+b;
+            case "-" -> a-b;
+            case "*" -> a*b;
+            case "/" -> b == 0 ? 0 : a/b;
+            default -> 0;
+        };
+    }
+
+
+
+
+
 
 
 }
