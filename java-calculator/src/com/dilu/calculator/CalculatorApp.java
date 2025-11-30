@@ -73,6 +73,13 @@ public class CalculatorApp extends JFrame{
         startNew = true;
     }
 
+    private void handleClear(){
+        display.setText("0");
+        num1 = 0;
+        operator = "";
+        startNew = true;
+    }
+
 
 
 }
