@@ -53,6 +53,9 @@ public class CalculatorApp extends JFrame{
         else if(command.equals("C")){
             handleClear();
         }
+        else if(command.equals("=")){
+            handleEquals();
+        }
     }
 
 }
