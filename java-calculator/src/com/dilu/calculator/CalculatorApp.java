@@ -44,7 +44,9 @@ public class CalculatorApp extends JFrame{
     }
 
     private void onButtonClick(String command){
-
+        if("0123456789".contains(command)){
+            handleNumber(command);
+        }
     }
 
 }
