@@ -50,6 +50,9 @@ public class CalculatorApp extends JFrame{
         else if("+-*/".contains(command)){
             handleOperator(command);
         }
+        else if(command.equals("C")){
+            handleClear();
+        }
     }
 
 }
