@@ -107,8 +107,10 @@ public class CalculatorApp extends JFrame{
         }
     }
 
-
-
-
-
+    public static void main(String[] args){
+        SwingUtilities.invokeLater(() -> {
+            CalculatorApp app = new CalculatorApp();
+            app.setVisible(true);
+        });
+    }
 }
