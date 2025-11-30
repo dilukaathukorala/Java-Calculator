@@ -67,6 +67,12 @@ public class CalculatorApp extends JFrame{
         }
     }
 
+    private void handleOperator(String op){
+        num1 = Double.parseDouble(display.getText());
+        operator = op;
+        startNew = true;
+    }
+
 
 
 }
