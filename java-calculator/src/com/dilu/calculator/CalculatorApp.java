@@ -43,4 +43,8 @@ public class CalculatorApp extends JFrame{
         add(panel, BorderLayout.CENTER);
     }
 
+    private void onButtonClick(String command){
+
+    }
+
 }
