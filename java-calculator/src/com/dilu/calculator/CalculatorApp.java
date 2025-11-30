@@ -58,4 +58,15 @@ public class CalculatorApp extends JFrame{
         }
     }
 
+    private void handleNumber(String digit){
+        if(startNew || display.getText().equals("0")){
+            display.setText(digit);
+            startNew = false;
+        }else{
+            display.setText(display.getText() + digit);
+        }
+    }
+
+
+
 }
