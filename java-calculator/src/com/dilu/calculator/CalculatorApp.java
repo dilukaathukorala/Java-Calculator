@@ -99,7 +99,13 @@ public class CalculatorApp extends JFrame{
         };
     }
 
-
+    private String removeTrailingZeros(double value){
+        if(value == (long) value){
+            return String.format("%d", (long) value);
+        }else{
+            return String.valueOf(value);
+        }
+    }
 
 
 
