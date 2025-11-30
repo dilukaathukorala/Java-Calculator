@@ -22,6 +22,24 @@ public class CalculatorApp extends JFrame{
         display.setFont(new Font("Arial", Font.BOLD, 28));
         display.setHorizontalAlignment(SwingConstants.RIGHT);
 
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(4, 4, 5, 5));
+
+        String[] buttons = {
+                "7", "8", "9", "/",
+                "4", "5", "6", "*",
+                "1", "2", "3", "-",
+                "0", "C", "=", "+",
+        };
+
+        for (String b : buttons){
+            JButton button = new JButton(b);
+            button.setFont(new Font("Arial", Font.BOLD, 24));
+            button.addActionListener(e -> onButtonClick(e.getActionCommand()));
+            panel.add(button);
+        }
+
+
     }
 
 }
