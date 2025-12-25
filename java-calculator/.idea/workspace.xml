@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="java-calculator:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6a01962-fa71-4fcb-8147-b48834356c48" name="Changes" comment="Changed Button colors and shape and add . button and backspace button." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dilukaathukorala&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dilukaathukorala/Java-Calculator.git&quot;,
+    &quot;accountId&quot;: &quot;04430529-12a3-49ec-b422-42a746914791&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="363xPiyIN4REdV7J21lGDnDRfu4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CalculatorApp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorApp (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorApp (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorApp (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorApp (5).executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorApp.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/GitHub-Projects/Java-Calculator/java-calculator/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.CalculatorApp (4)">
+    <configuration name="CalculatorApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilu.calculator.CalculatorApp" />
+      <module name="java-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilu.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorApp (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilu.calculator.CalculatorApp" />
+      <module name="java-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilu.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorApp (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilu.calculator.CalculatorApp" />
+      <module name="java-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilu.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorApp (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilu.calculator.CalculatorApp" />
+      <module name="java-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilu.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilu.calculator.CalculatorApp" />
+      <module name="java-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dilu.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CalculatorApp (4)" />
+        <item itemvalue="Application.CalculatorApp (3)" />
+        <item itemvalue="Application.CalculatorApp (2)" />
+        <item itemvalue="Application.CalculatorApp (1)" />
+        <item itemvalue="Application.CalculatorApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6a01962-fa71-4fcb-8147-b48834356c48" name="Changes" comment="" />
+      <created>1764249039067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764249039067</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Defined variables to store calculations">
+      <option name="closed" value="true" />
+      <created>1764429045866</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764429045866</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented display">
+      <option name="closed" value="true" />
+      <created>1764430634427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764430634427</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented display (result box)">
+      <option name="closed" value="true" />
+      <created>1764437432848</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764437432848</updated>
+    </task>
+    <task id="LOCAL-00004" summary="When a button is clicked, call our handler with the button text">
+      <option name="closed" value="true" />
+      <created>1764466655436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764466655436</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" Add components to window">
+      <option name="closed" value="true" />
+      <created>1764466679899</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764466679899</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Handle all button presses">
+      <option name="closed" value="true" />
+      <created>1764467825882</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764467825882</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Number button pressed (0–9)">
+      <option name="closed" value="true" />
+      <created>1764467854674</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764467854674</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Operator button pressed (+, -, *, /)">
+      <option name="closed" value="true" />
+      <created>1764469042000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469042000</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Clear button pressed">
+      <option name="closed" value="true" />
+      <created>1764469124311</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469124311</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Equals button pressed">
+      <option name="closed" value="true" />
+      <created>1764469470307</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469470307</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Handle number input (0–9).">
+      <option name="closed" value="true" />
+      <created>1764469674828</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469674828</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Handle operator input (+, -, *, /)">
+      <option name="closed" value="true" />
+      <created>1764469862700</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469862700</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Handle clear button (C)">
+      <option name="closed" value="true" />
+      <created>1764469960731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764469960731</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Perform arithmetic operation">
+      <option name="closed" value="true" />
+      <created>1764473416632</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764473416632</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Remove trailing zeros, e.g., 5.0 -&gt; &quot;5&quot;">
+      <option name="closed" value="true" />
+      <created>1764473435966</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1764473435966</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Main method – starts the application.">
+      <option name="closed" value="true" />
+      <created>1764473585367</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764473585367</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Modifier 'public' is redundant for 'main' method on Java 25.. Removed public">
+      <option name="closed" value="true" />
+      <created>1764473803192</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1764473803192</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adjusted to chained operations">
+      <option name="closed" value="true" />
+      <created>1764478683568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764478683568</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added 2 lines of the display. first line operation chain and second line is answer">
+      <option name="closed" value="true" />
+      <created>1764479293271</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1764479293271</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changed Button colors and shape">
+      <option name="closed" value="true" />
+      <created>1764480350411</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1764480350411</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Changed Button colors and shape and add . button and backspace button.">
+      <option name="closed" value="true" />
+      <created>1764482909097</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764482909097</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Defined variables to store calculations" />
+    <MESSAGE value="Implemented display" />
+    <MESSAGE value="Implemented display (result box)" />
+    <MESSAGE value="When a button is clicked, call our handler with the button text" />
+    <MESSAGE value=" Add components to window" />
+    <MESSAGE value="Handle all button presses" />
+    <MESSAGE value="Number button pressed (0–9)" />
+    <MESSAGE value="Operator button pressed (+, -, *, /)" />
+    <MESSAGE value="Clear button pressed" />
+    <MESSAGE value="Equals button pressed" />
+    <MESSAGE value="Handle number input (0–9)." />
+    <MESSAGE value="Handle operator input (+, -, *, /)" />
+    <MESSAGE value="Handle clear button (C)" />
+    <MESSAGE value="Perform arithmetic operation" />
+    <MESSAGE value="Remove trailing zeros, e.g., 5.0 -&gt; &quot;5&quot;" />
+    <MESSAGE value="Main method – starts the application." />
+    <MESSAGE value="Modifier 'public' is redundant for 'main' method on Java 25.. Removed public" />
+    <MESSAGE value="adjusted to chained operations" />
+    <MESSAGE value="added 2 lines of the display. first line operation chain and second line is answer" />
+    <MESSAGE value="Changed Button colors and shape" />
+    <MESSAGE value="Changed Button colors and shape and add . button and backspace button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Button colors and shape and add . button and backspace button." />
+  </component>
+</project>
